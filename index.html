@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt EWD</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="tittle">PROJEKT GRUPOWY EWD</div>
+        <nav>
+            <a href="#dane"><div>Dane</div></a>
+            <a href="#wykresy"><div>Wykresy</div></a>
+        </nav>
+    </header>
+    <a name="dane"></a>
+    <main>
+        <button type="button" onclick="loadXMLDoc()">POBIERZ NOWE DANE</button>
+        <table id="demo" style="display: block;">
+            <thead>
+                <tr style="height: 80px; background-color:rgba(66, 68, 90, 0.1);">
+                    <th>ID</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Race</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>IP address</th>
+                    <th>Timezone</th>
+                    <th>Favourite colour</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <a name="wykresy"></a>
+    </main>
+    <footer>
+        <p>Projekt przygotowali: <b>Maciej Boguś, Emanuel Bieleń, Wojciech Bartoszek</b></p>
+        <p>Uniwersytet Ekonomiczny w Krakowie, EWD</p>
+    </footer>
+</body>
+</html>
