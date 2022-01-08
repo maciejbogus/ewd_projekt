@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt EWD</title>
     <script src="app.js"></script>
     <link rel="stylesheet" href="main.css">
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<script src="billboard.js"></script>
+	<link rel="stylesheet" href="billboard.css">
 </head>
 <body>
     <header>
@@ -21,22 +23,18 @@
         <button type="button" onclick="loadXMLDoc()">POBIERZ NOWE DANE</button>
         <table id="demo" style="display: block;">
             <thead>
-                <tr style="height: 80px; background-color:rgba(66, 68, 90, 0.1);">
-                    <th>ID</th>
-                    <th>First name</th>
-                    <th>Last name</th>
-                    <th>Race</th>
-                    <th>Email</th>
-                    <th>Gender</th>
-                    <th>IP address</th>
-                    <th>Timezone</th>
-                    <th>Favourite colour</th>
-                </tr>
+                <tr id="table_head" style="height: 80px; background-color:rgba(143, 159, 189, 0.5);"></tr>
             </thead>
             <tbody>
             </tbody>
         </table>
+
         <a name="wykresy"></a>
+		<h1 id="chart1_title"></h1>
+		<div id="chart1" class="chart"></div>	
+        <h1 id="chart2_title"></h1>	
+		<div id="chart2" class="chart"></div>
+
     </main>
     <footer>
         <p>Projekt przygotowali: <b>Maciej Boguś, Emanuel Bieleń, Wojciech Bartoszek</b></p>

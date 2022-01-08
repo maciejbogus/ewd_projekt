@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
 
 :root {
-    --main-color:#8f9fbd;
+    --main-color:rgb(143, 159, 189);
     --header-height: 90px;
 }
 
@@ -32,7 +32,8 @@ header{
     box-shadow: 0px 9px 53px -27px rgba(66, 68, 90, 1);
     margin-bottom: 50px;
     position: fixed;
-    top:0
+    top:0;
+    z-index: 2;
 }
 
 .tittle{
@@ -60,17 +61,26 @@ footer{
 table{
     text-align: center;
     margin: auto;
-    width: 90%;
+    max-width: 90%;
+    font-size: 0.9rem;
+}
+
+h1{
+    margin-top: 100px;
 }
 
 td, th{
     padding-left: 10px;
     padding-right: 10px;
-    width: calc(100% / 9);
+    width: calc(90% / 9);
 }
 
 tr{
     height: 80px;
+}
+
+tr:nth-child(even){
+    background: rgba(143, 159, 189, 0.1);
 }
 
 nav{
@@ -103,4 +113,9 @@ button{
     width: 200px;
     height: 60px;
     margin: 50px;
+}
+
+.chart{
+	margin: 150px;
+    z-index: 0;
 }
